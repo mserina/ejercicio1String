@@ -339,6 +339,20 @@ namespace ejercicio1String.Servicios
    
         }
 
+        public void pedirCodigPostal()
+        {
+            Console.WriteLine("Codigo postal");
+            string codigoPostal = Console.ReadLine();
+            string tresDigitos = codigoPostal.Substring(0, 3);
 
+            if (tresDigitos == "410")
+            {
+                Console.WriteLine("Es de sevilla");
+            }
+            else
+            {
+                Console.WriteLine("No es de sevilla");
+            }
+        }
     }
 }

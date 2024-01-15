@@ -17,6 +17,7 @@ namespace ejercicio1String1.controladores
             op.pedirDNI();
 
             //Pide el código postal por consola y valida que es de la ciudad de Sevilla: en el enlace tienes los códigos postales de Sevilla
+            op.pedirCodigPostal();
         }
     }
 }
