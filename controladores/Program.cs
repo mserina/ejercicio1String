@@ -56,13 +56,16 @@ namespace ejercicio1String1.controladores
             //Calcula el tamaño de la variable con el nombre completo.
             Console.WriteLine(" ");
             Console.WriteLine("Calcular tamaño de la variable con el nombre completo");
-            Console.WriteLine(apellidos.Length + textoSeparado[0].Length);
+            Console.WriteLine(apellidos.Length + Concatenar.Length);
 
 
             //Recupera y muestra por consola el décimo carácter de la variable con los apellidos.
             Console.WriteLine(" ");
             Console.WriteLine("El decimo caracter de la variable apellido");
-            Console.WriteLine(apellidos.Substring(10));
+            Console.WriteLine(apellidos.Substring(9, 1));
+
+            //Busca la primera vez que aparece la letra a en el nombre completo.
+
         }
     }
 }

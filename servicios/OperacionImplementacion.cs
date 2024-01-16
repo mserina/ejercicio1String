@@ -351,7 +351,7 @@ namespace ejercicio1String.Servicios
         public string concatenar(string nombre, string apellido1, string apellido2)
         {
             Console.WriteLine("Concatenacion");
-            string concatenacion = apellido1 + apellido2 +","+ nombre + ".";
+            string concatenacion = apellido1 + " " + apellido2 +","+ nombre + ".";
             return concatenacion;
         }
 
