@@ -10,18 +10,11 @@ namespace ejercicio1String.Servicios
 {
     internal class OperacionImplementacion : OperacionInterfaz
     {
-        public void PedirNombreYApellido()
+        public void VerificarNombre(string nombre, string apellido1, string apellido2)
         {
             bool cerrarBucle = false;
             while (!cerrarBucle)
-            {
-                Console.WriteLine("Inserte nombre");
-                string nombre = Console.ReadLine();
-                Console.WriteLine("Inserte primer apellido");
-                string apellido1 = Console.ReadLine();
-                Console.WriteLine("Inserte segundo apellido");
-                string apellido2 = Console.ReadLine();
-
+            {               
                 if (!nombre.Equals(apellido1))
                 {
 
@@ -354,5 +347,15 @@ namespace ejercicio1String.Servicios
                 Console.WriteLine("No es de sevilla");
             }
         }
+
+        public string concatenar(string nombre, string apellido1, string apellido2)
+        {
+            Console.WriteLine("Concatenacion");
+            string concatenacion = apellido1 + apellido2 +","+ nombre + ".";
+            return concatenacion;
+        }
+
+    
+
     }
 }

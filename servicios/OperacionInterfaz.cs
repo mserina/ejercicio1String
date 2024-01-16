@@ -11,10 +11,13 @@ namespace ejercicio1String1.servicios
         /// <summary>
         /// Metodo que pide nombre y los dos apellidos, y verifica que nose repite el nombre
         /// </summary>
-        public void PedirNombreYApellido();
+        public void VerificarNombre(string nombre, string apellido1, string apellido2);
 
         public void pedirDNI();
 
         public void pedirCodigPostal();
+
+        public string concatenar(string nombre, string apellido1, string apellido2);
+
     }
 }
