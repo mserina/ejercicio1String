@@ -334,7 +334,7 @@ namespace ejercicio1String.Servicios
 
         public void pedirCodigPostal()
         {
-            Console.WriteLine("Codigo postal");
+            Console.WriteLine("Codigo postal: ");
             string codigoPostal = Console.ReadLine();
             string tresDigitos = codigoPostal.Substring(0, 3);
 
@@ -350,12 +350,74 @@ namespace ejercicio1String.Servicios
 
         public string concatenar(string nombre, string apellido1, string apellido2)
         {
-            Console.WriteLine("Concatenacion");
+            Console.WriteLine(" ");
+            Console.WriteLine("Concatenacion: ");
             string concatenacion = apellido1 + " " + apellido2 +","+ nombre + ".";
+            Console.WriteLine(concatenacion);
             return concatenacion;
         }
 
-    
+        public string separarConcatenacion(string concatenacion, string apellidos)
+        {
+            Console.WriteLine(" ");
+            Console.WriteLine("Separacion de apellidos y nombre");
+            string[] textoSeparado = concatenacion.Split(",");                                                                                                                                                                                         
+            foreach (string s in textoSeparado)
+            {
+                Console.WriteLine(s);
+            }
+            apellidos = textoSeparado[0];
+            return apellidos;
 
+        }
+
+        public void calcularTamañoVariable(string nombreCompleto)
+        {
+            Console.WriteLine(" ");
+            Console.WriteLine("Calcular tamaño de la variable con el nombre completo");
+            Console.WriteLine(nombreCompleto.Length);
+        }
+
+        public void decimoCaracterApellidos(string apellidos)
+        {
+            Console.WriteLine(" ");
+            Console.WriteLine("El decimo caracter de la variable apellido");
+            Console.WriteLine(apellidos.Substring(10, 1));
+        }
+
+        public void primeraANombre(string nombreCompleto)
+        {
+            Console.WriteLine(" ");
+            Console.WriteLine("La primera vez que aparece la letra a en el nombre completo.");
+            int indice = nombreCompleto.IndexOf("a");
+            Console.WriteLine(indice);
+        }
+
+        public void primeraRNombre(string nombreCompleto)
+        {
+            Console.WriteLine(" ");
+            Console.WriteLine("La primera vez que aparece la letra r a partir de la posicion 3");
+            int indiceR = nombreCompleto.IndexOf("r", 3, 10);
+            Console.WriteLine(indiceR);
+        }
+
+        public void deletrear(string nombre)
+        {
+            Console.WriteLine(" ");
+            Console.WriteLine("Deletrear Nombre");
+            char[] nombreDeletreado = nombre.ToCharArray();
+            foreach (char c in nombreDeletreado)
+            {
+                Console.WriteLine(c);
+            }
+        }
+
+        public void nombreArcPosicion(string nombreCompleto)
+        {
+            Console.WriteLine(" ");
+            Console.WriteLine("Posicion de arc");
+            int arcPosicion = nombreCompleto.IndexOf("arc");
+            Console.WriteLine(arcPosicion);
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using ejercicio1String.Servicios;
 using ejercicio1String1.servicios;
+using System.Reflection;
 
 namespace ejercicio1String1.controladores
 {
@@ -12,6 +13,8 @@ namespace ejercicio1String1.controladores
             string nombre ="";
             string apellido1 = "";
             string apellido2 = "";
+            string nombreCompleto = "";
+            string apellidos = "";
 
             Console.WriteLine("Insertar nombre, la primera letra Mayuscula");
              nombre = Console.ReadLine();
@@ -37,34 +40,37 @@ namespace ejercicio1String1.controladores
 
 
             //Concatena el nombre y los apellidos en una sola variable de tipo string con el siguiente formato: "apellido1 apellido2, nombre."
-            Console.WriteLine(" ");
-            string Concatenar = op.concatenar(nombre, apellido1, apellido2);   
-            Console.WriteLine(Concatenar);
+            nombreCompleto = op.concatenar(nombre, apellido1, apellido2);
 
 
             //Separa la concatenación y guarda los apellidos unidos en una sola variable.
-            Console.WriteLine(" ");
-            Console.WriteLine("Separacion de apellidos y nombre");
-            string[] textoSeparado = Concatenar.Split(",");
-            foreach (string s in textoSeparado)
-            {
-                Console.WriteLine(s);
-            }
-            string apellidos = textoSeparado[0];
+            apellidos = op.separarConcatenacion(nombreCompleto, apellidos);
 
 
             //Calcula el tamaño de la variable con el nombre completo.
-            Console.WriteLine(" ");
-            Console.WriteLine("Calcular tamaño de la variable con el nombre completo");
-            Console.WriteLine(apellidos.Length + Concatenar.Length);
+            op.calcularTamañoVariable(nombreCompleto);
 
 
             //Recupera y muestra por consola el décimo carácter de la variable con los apellidos.
-            Console.WriteLine(" ");
-            Console.WriteLine("El decimo caracter de la variable apellido");
-            Console.WriteLine(apellidos.Substring(9, 1));
+            op.decimoCaracterApellidos(apellidos);
+
 
             //Busca la primera vez que aparece la letra a en el nombre completo.
+            op.primeraANombre(nombreCompleto);
+
+
+            //Busca la primera vez que aparezca la letra r a partir de la posición 3 y hasta la posición 10 en el nombre completo.
+            op.primeraRNombre(nombreCompleto);
+
+
+            //Toma la variable nombre y guárdala en una nueva variable separando cada letra: Marcos -> M a r c o s
+            op.deletrear(nombre);
+
+            //Indica la posición del valor "arc" dentro del nombre completo.
+            //!!!Preguntar como se hace
+            op.nombreArcPosicion(nombreCompleto);
+
+
 
         }
     }
