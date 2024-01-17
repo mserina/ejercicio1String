@@ -46,6 +46,56 @@ namespace ejercicio1String.Servicios
 
         public void pedirDNI()
         {
+            string[] letrasDNI = new string[23];
+            letrasDNI[0] = "T";
+            letrasDNI[1] = "R";
+            letrasDNI[2] = "W";
+            letrasDNI[3] = "A";
+            letrasDNI[4] = "G";
+            letrasDNI[5] = "M";
+            letrasDNI[6] = "Y";
+            letrasDNI[7] = "F";
+            letrasDNI[8] = "P";
+            letrasDNI[9] = "D";
+            letrasDNI[10] = "X";
+            letrasDNI[11] = "B";
+            letrasDNI[12] = "N";
+            letrasDNI[13] = "J";
+            letrasDNI[14] = "Z";
+            letrasDNI[15] = "S";
+            letrasDNI[16] = "Q";
+            letrasDNI[17] = "V";
+            letrasDNI[18] = "H";
+            letrasDNI[19] = "L";
+            letrasDNI[20] = "C";
+            letrasDNI[21] = "K";
+            letrasDNI[22] = "E";
+
+            int[] numeroDni = new int[23];
+            numeroDni[0] = 0;
+            numeroDni[1] = 1;
+            numeroDni[2] = 2;
+            numeroDni[3] = 3;
+            numeroDni[4] = 4;
+            numeroDni[5] = 5;
+            numeroDni[6] = 6;
+            numeroDni[7] = 7;
+            numeroDni[8] = 8;
+            numeroDni[9] = 9;
+            numeroDni[10] = 10;
+            numeroDni[11] = 11;
+            numeroDni[12] = 12;
+            numeroDni[13] = 13;
+            numeroDni[14] = 14;
+            numeroDni[15] = 15;
+            numeroDni[16] = 16;
+            numeroDni[17] = 17;
+            numeroDni[18] = 18;
+            numeroDni[19] = 19;
+            numeroDni[20] = 20;
+            numeroDni[21] = 21;
+            numeroDni[22] = 22;
+
             bool cerrarBucle = false;
             while (!cerrarBucle)
             {
@@ -56,284 +106,23 @@ namespace ejercicio1String.Servicios
 
                 int DNINumeroResto = DNINumero % 23;
 
-                if (DNINumeroResto == 0)
-                {
-                    if (DNILetra.Equals("T"))
+               
+                 if (numeroDni[DNINumeroResto] == DNINumeroResto)
                     {
+                      if(DNILetra == letrasDNI[DNINumeroResto])
+                      {
                         cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 1)
-                {
-                    if (DNILetra.Equals("R"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumero == 2)
-                {
-                    if (DNILetra.Equals("W"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 3)
-                {
-                    if (DNILetra.Equals("A"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 4)
-                {
-                    if (DNILetra.Equals("G"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 5)
-                {
-                    if (DNILetra.Equals("M"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 6)
-                {
-                    if (DNILetra.Equals("Y"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 7)
-                {
-                    if (DNILetra.Equals("F"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 8)
-                {
-                    if (DNILetra.Equals("P"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 9)
-                {
-                    if (DNILetra.Equals("D"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 10)
-                {
-                    if (DNILetra.Equals("X"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 11)
-                {
-                    if (DNILetra.Equals("B"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 12)
-                {
-                    if (DNILetra.Equals("N"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 13)
-                {
-                    if (DNILetra.Equals("J"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 14)
-                {
-                    if (DNILetra.Equals("Z"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 15)
-                {
-                    if (DNILetra.Equals("S"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 16)
-                {
-                    if (DNILetra.Equals("Q"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 17)
-                {
-                    if (DNILetra.Equals("V"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 18)
-                {
-                    if (DNILetra.Equals("H"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 19)
-                {
-                    if (DNILetra.Equals("L"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 20)
-                {
-                    if (DNILetra.Equals("C"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 21)
-                {
-                    if (DNILetra.Equals("K"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
-                if (DNINumeroResto == 22)
-                {
-                    if (DNILetra.Equals("E"))
-                    {
-                        cerrarBucle = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("El DNI es erroneo, vuelva a insertarlo");
-                        Console.WriteLine(" ");
-                    }
-                }
+                      }
+                      else
+                      {
+                        Console.WriteLine("Ese dni no existe");
+                      }
+                 }
+                 else
+                 {
+                   Console.WriteLine("Ese dni no existe");
+                 }         
             }
-   
         }
 
         public void pedirCodigPostal()
