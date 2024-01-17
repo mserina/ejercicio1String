@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace ejercicio1String.Servicios
 {
+    /// <summary>
+    /// Metodo que contiene la logica de los metodos 
+    /// msm-170124
+    /// </summary>
     internal class OperacionImplementacion : OperacionInterfaz
     {
         public void VerificarNombre(string nombre, string apellido1, string apellido2)

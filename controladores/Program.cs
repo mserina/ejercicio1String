@@ -4,7 +4,9 @@ using System.Reflection;
 
 namespace ejercicio1String1.controladores
 {
-
+    /// <summary>
+    /// Clase principal del programa 
+    /// </summary>
     class Program
     {
 
@@ -65,6 +67,7 @@ namespace ejercicio1String1.controladores
 
             //Toma la variable nombre y guárdala en una nueva variable separando cada letra: Marcos -> M a r c o s
             op.deletrear(nombre);
+
 
             //Indica la posición del valor "arc" dentro del nombre completo.
             //!!!Preguntar como se hace
